@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,26 +10,36 @@
 
     <EditText
         android:id="@+id/edit_text_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Title" />
+        android:layout_width="238dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="132dp"
+        android:hint="Module"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edit_text_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Message" />
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="216dp"
+        android:hint="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="294dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="200dp"
         android:onClick="sendOnChannel1"
-        android:text="Sign up" />
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-<!--    <Button-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:onClick="sendOnChannel2"-->
-<!--        android:text="Send on Channel 2" />-->
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

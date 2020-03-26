@@ -33,8 +33,8 @@ public class signup extends AppCompatActivity {
     }
 
     public void sendOnChannel1(View v) {
-        String title = editTextTitle.getText().toString();
-        String message = editTextMessage.getText().toString();
+        String Module = editTextTitle.getText().toString();
+        String Name = editTextMessage.getText().toString();
 
         Intent resultintent = new Intent(this, registerForm.class);
         PendingIntent resultPendingIntent = PendingIntent.getActivity(this, 1, resultintent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -42,8 +42,8 @@ public class signup extends AppCompatActivity {
 
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_1_ID)
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
-                .setContentTitle(title)
-                .setContentText("Hello" + "\t" +message + "\tWelcome to the MAD team")
+                .setContentTitle(Module)
+                .setContentText("Hello" + "\t" +Name + "\tWelcome to the MAD team")
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .setContentIntent(resultPendingIntent)
@@ -58,18 +58,5 @@ public class signup extends AppCompatActivity {
 
     }
 
-//    public void sendOnChannel2(View v) {
-//        String title = editTextTitle.getText().toString();
-//        String message = editTextMessage.getText().toString();
-//
-//        Notification notification = new NotificationCompat.Builder(this, CHANNEL_2_ID)
-//                .setSmallIcon(R.drawable.ic_launcher_foreground)
-//                .setContentTitle(title)
-//                .setContentText(message)
-//                .setPriority(NotificationCompat.PRIORITY_LOW)
-//                .build();
-//
-//        notificationManager.notify(2, notification);
-//    }
 
 }
